@@ -1,23 +1,22 @@
-public class arithematic {
+import java.util.Scanner;
 
+public class arithematic{
     public static void main(String[] args) {
-        // Declare and initialize two integers
-        int num1 = 10;
-        int num2 = 3;
+        Scanner scanner = new Scanner(System.in);
 
-        // Perform arithmetic operations
-        int sum = num1 + num2;
-        int difference = num1 - num2;
-        int product = num1 * num2;
-        int quotient = num1 / num2; // Integer division
-        int remainder = num1 % num2; // Remainder
+        // Get two numbers from the user
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
 
-        // Display the results
-        System.out.println("Sum: " + sum);
-        System.out.println("Difference: " + difference);
-        System.out.println("Product: " + product);
-        System.out.println("Quotient: " + quotient);
-        System.out.println("Remainder: " + remainder);
+        // Perform and display all operations
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Subtraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
+        scanner.close();
     }
 }
+
 
